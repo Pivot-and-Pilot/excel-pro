@@ -3747,4 +3747,12 @@ div.wpcf7-validation-errors{
   left: 50%;}
 
 .text-next > p{
-  font-size: 1em;}
+  font-size: 1em;
+  background-color: #f36e3f;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  font-style: normal;
+  text-transform: uppercase; 
+}

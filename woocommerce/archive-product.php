@@ -26,9 +26,9 @@ get_header(); ?>
 
           <article class="article-header">
 
-            <h3>Get Excelling in Life Today!</h3>
+            <h3>Get Excelling in Life today!</h3>
 
-            <h2>Let Excel&reg; Manage the Repetitive &amp; Tedious Tasks of Every Day Life.</h2>
+            <h2>Let Excel&reg; manage the repetitive &amp; tedious tasks of everyday life.</h2>
 
           </article>
 
