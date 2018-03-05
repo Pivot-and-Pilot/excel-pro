@@ -50,7 +50,7 @@ $loop->rewind_posts();
 
     <article class="article-header">
 
-      <h3>Welcome <?php echo $current_user->user_firstname; ?>!</h3>
+      <h3>Welcome<?php echo ' '.$current_user->user_firstname; ?>!</h3>
 
       <p>Find your purchased books below.</p>
 

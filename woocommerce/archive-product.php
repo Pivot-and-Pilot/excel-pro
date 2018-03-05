@@ -96,7 +96,7 @@ get_header(); ?>
 
             <picture class="picture-book">
 
-              <figure class="figure-price figure-price-shipping">$30<span class="currency">USD</span></figure>
+              <figure class="figure-price figure-price-shipping">Coming soon<span class="currency">USD</span></figure>
 
               <img src="<?php echo get_template_directory_uri() . '/img/book-cover.jpg' ?>"/>
 

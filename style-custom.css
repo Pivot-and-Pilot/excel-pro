@@ -343,7 +343,7 @@ section{
 
 select[name="CHAPTER"],
 select[name="SECTION"]{
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 select[name="CHAPTER"].state-active,
@@ -353,7 +353,7 @@ select[name="SECTION"].state-active{
 
 select[name="CHAPTER"] > option:not(:first-of-type),
 select[name="SECTION"] > option:not(:first-of-type){
-  display: none;
+  display: block;
 }
 
 ul{

@@ -242,7 +242,8 @@ $current_user = wp_get_current_user();
 
 <div class="container-comments">
 
-<?php foreach($comments as $comment): ?>
+<!-- commented out because the client doesnt want to show any errata, uncomment to show errata  -->
+<!-- <?php foreach($comments as $comment): ?>
 
     <?php $chapterIndex = get_comment_meta($comment->comment_ID, 'CHAPTER', true); ?>
     <?php $sectionNum = get_comment_meta($comment->comment_ID, 'SECTION', true); ?>
@@ -261,11 +262,12 @@ $current_user = wp_get_current_user();
 
     </article>
 
-<?php endforeach ?>
+<?php endforeach ?> --> 
 
-<?php if(count($comments) === 0): ?>
+<!-- change the if condition back to count($comments) === 0 to show the errata normally -->
+<?php if(count($comments) !== 0): ?>
 
-    <h3>No errata results were found.</h3>
+    <h3>No errata have yet been identified.</h3>
 
 <?php else: ?>
 
