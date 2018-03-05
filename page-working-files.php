@@ -28,7 +28,7 @@ get_header(); ?>
 
                         <h3>Working Files</h3>
 
-                        <p>Navigate through the chapters below using the tabs below and download the working spreadsheets!</p>
+                        <p>Navigate through the chapters using the tabs and download the working spreadsheets!</p>
 
                         <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download All Files"><span>Download All Files</span></button></a>
 
@@ -42,8 +42,7 @@ get_header(); ?>
 
             <?php foreach(AVAILABLE_CHAPTERS as $index=>$chapterPrefix): ?>
 
-			<?php if(get_field($chapterPrefix . '_download_1')): ?>
-
+            <?php if(get_field($chapterPrefix . '_download_1')): ?>
                 <li class="chapter-entry">
 
                     <p class="p-title"><?php echo AVAILABLE_CHAPTERS_NAMES[$index]; ?></p>

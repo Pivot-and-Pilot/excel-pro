@@ -31,7 +31,7 @@
 
 			<div class="footer-half">
 				<article>
-					<p>Found a mistake in our book?<br>Tell us more in our <a href=""><i>errata</i></a>.</p>
+					<p>Found a mistake in our book?<br>Tell us more in our <a href="<?php echo get_site_url()?>/errata"><i>errata</i></a>.</p>
 					<br>
 				</article>
 			</div><div class="footer-half">
@@ -42,7 +42,7 @@
 
 			<div class="site-info">
 				<img src="<?php echo get_template_directory_uri() . '/img/logo_small.png' ?>"/>
-				<p>2017 &copy; Varhola Productions.<br> Web Design &amp; Code by <a href="https://pivotandpilot.com" target="_blank">Pivot &amp; Pilot</a>. Original photography by <a href="http://www.fotoarkitekt.com">Gonzalo Villota</a></p>
+				<p>2017 &copy; Varhola Productions.<br> Web Design &amp; Code by <a href="https://pivotandpilot.com" target="_blank">Pivot &amp; Pilot</a>. Original photography by <a href="http://www.fotoarkitekt.com" target="_blank">Gonzalo Villota</a></p>
 				
 			</div><!-- .site-info -->
 		</path>
