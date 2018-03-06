@@ -2769,8 +2769,7 @@ ul{
   .section-landing::before{
     content:"What makes our book unique? Scroll down to find out";
     font-family: Crimson;
-    font-size: 1.3em;
-    font-style: italic;
+    font-size: 1.6em;
     font-weight: 900;
     line-height: 90px;
     position: absolute;

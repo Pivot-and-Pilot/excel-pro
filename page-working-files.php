@@ -32,6 +32,8 @@ get_header(); ?>
 
                         <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download All Files"><span>Download All Files</span></button></a>
 
+                        <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download Answer Keys"><span>Download Answer Keys</span></button></a>
+
                     </article>
 
                 </div>
