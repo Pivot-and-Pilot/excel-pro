@@ -11,7 +11,7 @@
 <div class="max-width-wrapper">
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
-			<?php echo get_the_content( '<h3 class="entry-title">', '</h3>' ); ?>
+			<?php echo the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
