@@ -96,13 +96,14 @@ get_header(); ?>
 
             <picture class="picture-book">
 
-              <figure class="figure-price figure-price-shipping">Coming soon<span class="currency">USD</span></figure>
+              <figure class="figure-price figure-price-shipping">Coming soon<span class="currency"></span></figure>
 
               <img src="<?php echo get_template_directory_uri() . '/img/book-cover.jpg' ?>"/>
 
             </picture>
 
-            <div class="align-right">
+            <!-- this is the amazon part, uncomment to show -->
+            <!-- <div class="align-right">
 
               <h2><b>Print isn't dead!</b><br>Buy our printed book on</h2>
 
@@ -118,7 +119,7 @@ get_header(); ?>
 
               </nav>
 
-            </div>
+            </div> -->
 
           </article>
 

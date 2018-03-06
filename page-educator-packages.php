@@ -32,10 +32,10 @@ get_header(); ?>
                     <img class="m-icon" src="<?php echo get_template_directory_uri() . '/img/educator-verification.svg' ?>"/>
                     <?php the_field('icon_2_text'); ?>
                   </article>
-                  <article class="text-closer">
+                  <!-- <article class="text-closer">
                     <img class="m-icon" src="<?php echo get_template_directory_uri() . '/img/educator-credit.svg' ?>"/>
                     <?php the_field('icon_3_text'); ?>
-                  </article>
+                  </article> -->
                   <article class="text-closer">
                     <img class="m-icon" src="<?php echo get_template_directory_uri() . '/img/educator-ticket.svg' ?>"/>
                     <?php the_field('icon_4_text'); ?>
