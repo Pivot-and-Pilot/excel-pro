@@ -47,7 +47,7 @@ get_header(); ?>
                 <div id="screen">
                   
                   <?php $shopPage = get_page_by_title('shop'); ?>
-                  <video id="video-1" src="<?php echo get_field('video_id_1', $shopPage); ?>" loop></video>
+                  <video id="video-1" src="<?php echo get_field('video_id_1', $shopPage); ?>" loop autoplay></video>
                   <video id="video-2" src="<?php echo get_field('video_id_2', $shopPage); ?>" loop></video>
                   <video id="video-3" src="<?php echo get_field('video_id_3', $shopPage); ?>" loop></video>
 
