@@ -3446,6 +3446,13 @@ ul{
 #video_player > #screen > video#video-2 {
   opacity: 0;
 }
+#video_player > #screen > video#video-3 {
+  opacity: 0;
+  width: 135px;
+  height: 238px;
+  top: 69px;
+  left: 198px;
+}
 
 
 /* #video_player > #screen > iframe.state-active{

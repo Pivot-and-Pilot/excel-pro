@@ -49,6 +49,7 @@ get_header(); ?>
                   <?php $shopPage = get_page_by_title('shop'); ?>
                   <video id="video-1" src="<?php echo get_field('video_id_1', $shopPage); ?>" loop></video>
                   <video id="video-2" src="<?php echo get_field('video_id_2', $shopPage); ?>" loop></video>
+                  <video id="video-3" src="<?php echo get_field('video_id_3', $shopPage); ?>" loop></video>
 
                 </div>
 
@@ -80,7 +81,7 @@ get_header(); ?>
 
             </li>
 
-            <li class="play_video">
+            <li class="play_video" data-iframe-ref="video_three">
 
               <img class="img-icon" src="<?php echo get_template_directory_uri() . '/img/icon-optimization.svg' ?>"/>
               
