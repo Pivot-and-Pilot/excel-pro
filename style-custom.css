@@ -3448,11 +3448,31 @@ ul{
 }
 #video_player > #screen > video#video-3 {
   opacity: 0;
-  width: 135px;
-  height: 238px;
-  top: 69px;
-  left: 198px;
 }
+@media(min-width:375px){
+  #video_player > #screen > video#video-3{
+    width: 65px;
+    height: 118px;
+    top: 34px;
+    left: 97px;}}
+@media(min-width: 425px){
+  #video_player > #screen > video#video-3{
+    width: 76px;
+    height: 134px;
+    top: 38px;
+    left: 112px;}}
+@media(min-width: 768px){
+  #video_player > #screen > video#video-3{
+    width: 106px;
+    height: 187px;
+    top: 55px;
+    left: 155px;}}
+@media(min-width: 1025px){
+  #video_player > #screen > video#video-3{
+    width: 135px;
+    height: 238px;
+    top: 69px;
+    left: 198px;}}
 
 
 /* #video_player > #screen > iframe.state-active{
