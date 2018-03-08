@@ -1672,7 +1672,7 @@ ul{
   z-index:1;}
 @media(min-width:375px){
   .figure-price{
-    font-size: 1.8em;
+    font-size: 0.8em;
     height: 115px;
     width: 115px;
     /* line-height: 115px; */
@@ -2438,7 +2438,9 @@ ul{
 
 @media(min-width:768px){
   .picture-laptop-alternate > .figure-price{
-    margin-bottom: -110px;}}
+    margin-bottom: -110px;
+    right: unset;
+  }}
 
 #primary{
   position: relative;}
@@ -3405,6 +3407,7 @@ ul{
     bottom: 25px;
     left: 35px;
     right: 35px;}
+
 @media(min-width:375px){
   #video_player > #screen{
       top: 15px;
@@ -3449,6 +3452,12 @@ ul{
 #video_player > #screen > video#video-3 {
   opacity: 0;
 }
+@media(min-width:320px){
+  #video_player > #screen > video#video-3{
+    width: 57px;
+    height: 100px;
+    top: 30px;
+    left: 84px;}}
 @media(min-width:375px){
   #video_player > #screen > video#video-3{
     width: 65px;
