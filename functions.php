@@ -465,6 +465,9 @@ function excelpro_scripts() {
 	wp_enqueue_style('excelpro-slick', get_template_directory_uri() . '/js/slick/slick.css', true );
 
   wp_enqueue_style( 'excelpro-style-custom', get_template_directory_uri() . '/style-custom.css' );
+
+  // book contents page
+  wp_enqueue_style( 'excelpro-style-book-contents-page', get_template_directory_uri() . '/book-contents.css' );
   
   wp_enqueue_script('excelpro-checkout', get_template_directory_uri() . '/js/checkout.js', array(), null, true);
 

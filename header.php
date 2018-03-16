@@ -80,7 +80,9 @@
 				</button>
 				<div id="primary-menu" class="menu">
 					<ul aria-expanded="false" class=" nav-menu">
+					<?php if(is_user_logged_in()): ?>
 						<li><a href="<?php echo site_url('/working-files'); ?>">Download Working Files</a></li>
+					<?php endif ?>
 						<li><a href="<?php echo site_url('/contents'); ?>">Book Contents</a></li>
 						<li><a href="<?php echo site_url('/educator-packages'); ?>">Educator Packages</a></li>
 						<li><a id="button_buy" data-text="Get Excelling in Life Today" href="<?php echo site_url('/shop') ?>"><span>Get Excelling In Life Today</span></a></li>
