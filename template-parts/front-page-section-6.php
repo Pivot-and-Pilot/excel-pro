@@ -45,7 +45,7 @@
 
             <picture class="picture-book">
             
-                <figure class="figure-price">Coming soon<span class="currency"></span></figure>
+                <figure class="figure-price">Coming Soon<span class="currency"></span></figure>
             
                 <img src="<?php echo get_template_directory_uri() . '/img/ExcelPro-book-cover.jpg' ?>"/>
                 
