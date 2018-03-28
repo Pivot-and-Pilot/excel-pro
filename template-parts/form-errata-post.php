@@ -21,8 +21,8 @@ $current_user = wp_get_current_user();
   <h3>Errata Form</h3>
   <h2>Personal Information</h2>
     <div class="container-inputs">
-      <input name="FNAME" type="text" placeholder="full name*" value="<?php echo $current_user->user_firstname ?>"/>
-      <input name="LNAME" type="text" placeholder="last name*" value="<?php echo $current_user->user_lastname ?>"/>
+      <input name="FNAME" type="text" placeholder="first name" value="<?php echo $current_user->user_firstname ?>"/>
+      <input name="LNAME" type="text" placeholder="last name" value="<?php echo $current_user->user_lastname ?>"/>
       <input name="EMAIL" type="email" placeholder="email*"/ value="<?php echo $current_user->user_email ?>">
       <input name="PHONE" type="text" placeholder="phone number"/>
     </div>
