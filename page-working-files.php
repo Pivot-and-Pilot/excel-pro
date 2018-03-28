@@ -28,7 +28,7 @@ get_header(); ?>
 
                         <h3>Working Files</h3>
 
-                        <p>Navigate through the chapters using the tabs and download the working spreadsheets!</p>
+                        <p>Navigate through the chapters using the tabs below and download the working spreadsheets!</p>
 
                         <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download All Files"><span>Download All Files</span></button></a>
 

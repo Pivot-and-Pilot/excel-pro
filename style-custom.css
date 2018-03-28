@@ -1982,7 +1982,9 @@ ul{
   color: white;
   margin: 1.5em auto 0.75em auto;
   position: relative;
-  text-align: center;}
+  text-align: center;
+  font-family: arial;
+}
 @media(min-width:1025px){
   .formula{
     width: 745px;}}
@@ -2031,9 +2033,9 @@ ul{
 
 .formula.js-visible > svg:first-of-type{
   opacity: 1;
-  -webkit-transform: translate(0, -50%) rotateZ(0deg);
-      -ms-transform: translate(0, -50%) rotate(0deg);
-          transform: translate(0, -50%) rotateZ(0deg);
+  -webkit-transform: translate(75px, -50%) rotateZ(0deg);
+      -ms-transform: translate(75px, -50%) rotate(0deg);
+          transform: translate(75px, -50%) rotateZ(0deg);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;}
@@ -2069,7 +2071,9 @@ ul{
   color: #6545ff;
   -webkit-transition: 1s;
   -o-transition: 1s;
-  transition: 1s;}
+  transition: 1s;
+  font-family: arial;
+}
 
 .formula-black{
   color: black;}
@@ -2782,7 +2786,7 @@ ul{
     content:"What makes our book unique? Scroll down to find out";
     font-family: montserrat;
     font-size: 1.6em;
-    font-weight: 900;
+    font-weight: 400;
     line-height: 90px;
     position: absolute;
       left:0;

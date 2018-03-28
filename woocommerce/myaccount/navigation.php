@@ -49,9 +49,15 @@ $loop->rewind_posts();
   <div class="max-width-wrapper">
 
     <article class="article-header">
+      <?php if ($current_user->user_firstname) : ?>
 
       <h3>Welcome<?php echo ' '.$current_user->user_firstname; ?>!</h3>
 
+      <?php else : ?>
+
+      <h3>Welcome!</h3>
+
+      <?php endif; ?>
       <p>Find your purchased books below.</p>
 
     </article>
