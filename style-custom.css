@@ -3809,3 +3809,14 @@ div.wpcf7-validation-errors{
   font-weight: 600;
   letter-spacing: 1.5px;
 }
+
+a.check-out__my-book-link {
+  padding: 15px 100px;
+  background-color: #00c473;
+  color: #fff;
+  border: 1px solid #00c473;
+}
+a.check-out__my-book-link:hover {
+  background-color: #fff;
+  color: #00c473;
+}

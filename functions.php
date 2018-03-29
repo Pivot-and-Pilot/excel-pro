@@ -302,7 +302,9 @@ function wooc_extra_register_fields() {?>
     </select>
   </p>
   <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-    <label for="reg_occupation"><?php _e( 'Occupation', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <label for="reg_occupation"><?php _e( 'Occupation', 'woocommerce' ); ?>
+       <!-- <span class="required">*</span> -->
+       </label>
     <input placeholder="Occupation" type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="occupation" id="reg_occupation" value="<?php echo ( ! empty( $_POST['occupation'] ) ) ? esc_attr( $_POST['occupation'] ) : ''; ?>"/>
   </p>
   <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -324,9 +326,11 @@ function wooc_validate_extra_register_fields( $username, $email, $validation_err
   if ( isset( $_POST['age'] ) && empty( $_POST['age'] ) ) {
     $validation_errors->add( 'age_error', __( '<strong>Error</strong>: Please enter your age range.', 'woocommerce') );
   }
-  if ( isset( $_POST['occupation'] ) && empty( $_POST['occupation'] ) ) {
-    $validation_errors->add( 'occupation_error', __( '<strong>Error</strong>: Please enter your occupation.', 'woocommerce') );
-  }
+
+  // check if occupation if empty
+  // if ( isset( $_POST['occupation'] ) && empty( $_POST['occupation'] ) ) {
+  //   $validation_errors->add( 'occupation_error', __( '<strong>Error</strong>: Please enter your occupation.', 'woocommerce') );
+  // }
   return $validation_errors;  
 }
 add_action( 'woocommerce_register_post', 'wooc_validate_extra_register_fields', 10, 3);
