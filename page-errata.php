@@ -53,12 +53,9 @@ function create_comment($current_user){
     //Insert new comment and get the comment ID
     $comment_id = null;
 
-    // wp_insert_comment($commentdata);
-
     try {
 
         $comment_id = wp_new_comment( $commentdata, true );
-        wp_new_comment( $commentdata, true );
         add_comment_meta( $comment_id, 'CHAPTER', $chapter );
         add_comment_meta( $comment_id, 'SECTION', $section );
 
@@ -69,9 +66,9 @@ function create_comment($current_user){
     }
 
     return $comment_id;
-
+    
 }
-
+create_comment($current_user);
 get_header(); ?>
 
   <div id="primary" class="content-area">
