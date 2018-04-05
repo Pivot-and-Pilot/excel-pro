@@ -243,7 +243,11 @@ $current_user = wp_get_current_user();
 <div class="container-comments">
 
 <!-- commented out because the client doesnt want to show any errata, uncomment to show errata  -->
-<?php foreach($comments as $comment): ?>
+<?php foreach($comments as $comment): 
+    echo "<pre>" . var_export($comment, true) . "</pre>";
+?>
+
+    
 
     <?php $chapterIndex = get_comment_meta($comment->comment_ID, 'CHAPTER', true); ?>
     <?php $sectionNum = get_comment_meta($comment->comment_ID, 'SECTION', true); ?>

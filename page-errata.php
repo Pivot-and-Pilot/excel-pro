@@ -16,17 +16,18 @@ if ( !is_user_logged_in() ) {wp_redirect(site_url('my-account'));exit;}
 
 function create_comment($current_user){
 
-    $fName= isset($_POST['FNAME']) ? $_POST['FNAME'] : null;
-    $lName= isset($_POST['LNAME']) ? $_POST['LNAME'] : null;
-    $email= isset($_POST['EMAIL']) ? $_POST['EMAIL'] : null;
-    $phone= isset($_POST['PHONE']) ? $_POST['PHONE'] : null;
+    $fName = isset($_POST['FNAME']) ? $_POST['FNAME'] : null;
+    $lName = isset($_POST['LNAME']) ? $_POST['LNAME'] : null;
+    $email = isset($_POST['EMAIL']) ? $_POST['EMAIL'] : null;
+    $phone = isset($_POST['PHONE']) ? $_POST['PHONE'] : null;
     $comment = isset($_POST['COMMENT']) ? $_POST['COMMENT'] : null;
 
     $productId = isset($_POST['PRODUCT_ID']) ? $_POST['PRODUCT_ID'] : null;
     $chapter = isset($_POST['CHAPTER']) ? $_POST['CHAPTER'] : null;
     $section = isset($_POST['SECTION']) ? $_POST['SECTION'] : null;
 
-    if(!$fName || !$lName || !$email || !is_string($fName) || !is_string($lName) || !is_string($email)) return false;
+    // add '!$fName || !$lName || !is_string($fName) || !is_string($lName) ||' to the if statement to require first name and last name
+    if( !$email || !is_string($email)) return false;
     if($productId === null || $chapter === null || $section === null || $comment === null || $comment === "") return false;
 
     $productId = intval($productId);
@@ -52,14 +53,17 @@ function create_comment($current_user){
     //Insert new comment and get the comment ID
     $comment_id = null;
 
-    try{
+    // wp_insert_comment($commentdata);
+
+    try {
 
         $comment_id = wp_new_comment( $commentdata, true );
+        wp_new_comment( $commentdata, true );
         add_comment_meta( $comment_id, 'CHAPTER', $chapter );
         add_comment_meta( $comment_id, 'SECTION', $section );
 
     } catch (Exception $e) {
-
+        
         return false;
 
     }
