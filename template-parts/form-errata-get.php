@@ -244,7 +244,7 @@ $current_user = wp_get_current_user();
 
 <!-- commented out because the client doesnt want to show any errata, uncomment to show errata  -->
 <?php foreach($comments as $comment): 
-    echo "<pre>" . var_export($comment, true) . "</pre>";
+    
 ?>
 
     

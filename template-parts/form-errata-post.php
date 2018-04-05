@@ -37,16 +37,16 @@ $current_user = wp_get_current_user();
       </select>
       <select name="CHAPTER">
         <option value="">Chapter</option>
-        <option value="0">Chapter One</option>
-        <option value="1">Chapter Two</option>
-        <option value="2">Chapter Three</option>
-        <option value="3">Chapter Four</option>
-        <option value="4">Chapter Five</option>
-        <option value="5">Chapter Six</option>
-        <option value="6">Chapter Seven</option>
-        <option value="7">Chapter Eight</option>
-        <option value="8">Chapter Nine</option>
-        <option value="9">Chapter Ten</option>
+        <option value="0">Chapter 1</option>
+        <option value="1">Chapter 2</option>
+        <option value="2">Chapter 3</option>
+        <option value="3">Chapter 4</option>
+        <option value="4">Chapter 5</option>
+        <option value="5">Chapter 6</option>
+        <option value="6">Chapter 7</option>
+        <option value="7">Chapter 8</option>
+        <option value="8">Chapter 9</option>
+        <option value="9">Chapter 10</option>
       </select>
       <select name="SECTION">
         <option value="">Section</option>

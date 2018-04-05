@@ -1086,6 +1086,7 @@ ul{
 
 #colophon .p-title{
   text-align: left;
+  letter-spacing: 1.5px;
 }
 
 .controller{
@@ -1227,6 +1228,9 @@ ul{
 
 .entry-content{
   margin: 0;
+}
+#form_errata {
+  padding-top: 30px;
 }
 
 #form_errata > h2{
