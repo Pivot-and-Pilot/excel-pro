@@ -51,32 +51,87 @@
   src: url('./fonts/Crimson/CrimsonText-Bold.ttf') format('truetype');}
 
 @-webkit-keyframes scaleVerticalOne{
-  0%{transform: translateY(2px) scaleY(7);}
-  50%{transform: translateY(2px) scaleY(2);}
-  100%{transform: translateY(2px) scaleY(7);}}
+  0%{
+    transform: translateY(2px) scaleY(7);
+    -moz-transform: translateY(2px) scaleY(7);
+  }
+  50%{
+    transform: translateY(2px) scaleY(2);
+    -moz-transform: translateY(2px) scaleY(2);
+  }
+  100%{
+    transform: translateY(2px) scaleY(7);
+    -moz-transform: translateY(2px) scaleY(7);
+  }
+}
 
 @-webkit-keyframes scaleVerticalTwo{
-  0%{transform: translateY(2px) scaleY(3);}
-  33%{transform: translateY(2px) scaleY(7);}
-  66%{transform: translateY(2px) scaleY(1);}
-  100%{transform: translateY(2px) scaleY(3);}}
+  0%{
+    transform: translateY(2px) scaleY(3);
+    -moz-transform: translateY(2px) scaleY(3);
+  }
+  33%{
+    transform: translateY(2px) scaleY(7);
+    -moz-transform: translateY(2px) scaleY(7);
+  }
+  66%{
+    transform: translateY(2px) scaleY(1);
+    -moz-transform: translateY(2px) scaleY(1);
+  }
+  100%{
+    transform: translateY(2px) scaleY(3);
+    -moz-transform: translateY(2px) scaleY(3);
+  }
+}
 
 @-webkit-keyframes scaleVerticalThree{
-  0%{transform: translateY(2px) scaleY(4);}
-  33%{transform: translateY(2px) scaleY(2);}
-  66%{transform: translateY(2px) scaleY(6);}
-  100%{transform: translateY(2px) scaleY(4);}}
+  0%{
+    transform: translateY(2px) scaleY(4);
+    -moz-transform: translateY(2px) scaleY(4);
+  }
+  33%{
+    transform: translateY(2px) scaleY(2);
+    -moz-transform: translateY(2px) scaleY(2);
+  }
+  66%{
+    transform: translateY(2px) scaleY(6);
+    -moz-transform: translateY(2px) scaleY(6);
+  }
+  100%{
+    transform: translateY(2px) scaleY(4);
+    -moz-transform: translateY(2px) scaleY(4);
+  }
+}
 
 @-webkit-keyframes scaleVerticalFour{
-  0%{transform: translateY(2px) scaleY(3);}
-  50%{transform: translateY(2px) scaleY(7);}
-  100%{transform: translateY(2px) scaleY(3);}}
+  0%{
+    transform: translateY(2px) scaleY(3);
+    -moz-transform: translateY(2px) scaleY(3);
+  }
+  50%{
+    transform: translateY(2px) scaleY(7);
+    -moz-transform: translateY(2px) scaleY(7);
+  }
+  100%{
+    transform: translateY(2px) scaleY(3);
+    -moz-transform: translateY(2px) scaleY(3);
+  }
+}
 
 @-webkit-keyframes scaleVerticalFive{
-  0%{transform: translateY(2px) scaleY(1.5);}
-  50%{transform: translateY(2px) scaleY(6);}
-  100%{transform: translateY(2px) scaleY(1.5);}}
-
+  0%{
+    transform: translateY(2px) scaleY(1.5);
+    -moz-transform: translateY(2px) scaleY(1.5);
+  }
+  50%{
+    transform: translateY(2px) scaleY(6);
+    -moz-transform: translateY(2px) scaleY(6);
+  }
+  100%{
+    transform: translateY(2px) scaleY(1.5);
+    -moz-transform: translateY(2px) scaleY(1.5);
+  }
+}
 
 a{
   text-decoration: none;
@@ -1335,11 +1390,41 @@ ul{
   animation-play-state: paused;
 }
 
-#loader-table > tbody > tr > td > .figure-bar-1{animation: scaleVerticalOne 2s ease-in-out infinite;transform: translateY(2px) scaleY(7);}
-#loader-table > tbody > tr > td > .figure-bar-2{animation: scaleVerticalTwo 4s ease-in-out infinite;transform: translateY(2px) scaleY(3);}
-#loader-table > tbody > tr > td > .figure-bar-3{animation: scaleVerticalThree 2.5s ease-in-out infinite;transform: translateY(2px) scaleY(4);}
-#loader-table > tbody > tr > td > .figure-bar-4{animation: scaleVerticalFour 3.5s ease-in-out infinite;transform: translateY(2px) scaleY(3);}
-#loader-table > tbody > tr > td > .figure-bar-5{animation: scaleVerticalFive 4.5s ease-in-out infinite;transform: translateY(2px) scaleY(1.5);}
+#loader-table > tbody > tr > td > .figure-bar-1{
+  animation: scaleVerticalOne 2s ease-in-out infinite;
+  -moz-animation: scaleVerticalOne 2s ease-in-out infinite;
+  transform: translateY(2px) scaleY(7);
+  -moz-transform: translateY(2px) scaleY(7);
+}
+  
+#loader-table > tbody > tr > td > .figure-bar-2{
+  animation: scaleVerticalTwo 4s ease-in-out infinite;
+  -moz-animation: scaleVerticalTwo 4s ease-in-out infinite;
+  transform: translateY(2px) scaleY(3);
+  -moz-transform: translateY(2px) scaleY(3);
+}
+  
+#loader-table > tbody > tr > td > .figure-bar-3{
+  animation: scaleVerticalThree 2.5s ease-in-out infinite;
+  -moz-animation: scaleVerticalThree 2.5s ease-in-out infinite;
+  transform: translateY(2px) scaleY(4);
+  -moz-transform: translateY(2px) scaleY(4);
+}
+  
+#loader-table > tbody > tr > td > .figure-bar-4{
+  animation: scaleVerticalFour 3.5s ease-in-out infinite;
+  -moz-animation: scaleVerticalFour 3.5s ease-in-out infinite;
+  transform: translateY(2px) scaleY(3);
+  -moz-transform: translateY(2px) scaleY(3);
+}
+  
+#loader-table > tbody > tr > td > .figure-bar-5{
+  animation: scaleVerticalFive 4.5s ease-in-out infinite;
+  -moz-animation: scaleVerticalFive 4.5s ease-in-out infinite;
+  transform: translateY(2px) scaleY(1.5);
+  -moz-transform: translateY(2px) scaleY(1.5);
+}
+  
 
 .h1-center{
   max-width: none;
