@@ -639,7 +639,11 @@ ul{
 
 @media(min-width:1200px){
   .article-product > .reader-links > a{
-    width: calc(50% - 7.5px);}}
+    /* uncomment when add Mac OS book */
+    /* width: calc(50% - 7.5px); */
+    width: 100%;
+  }
+}
 
 @media(min-width:1200px){
   .article-product > .reader-links > .button-teacher{
@@ -3127,7 +3131,7 @@ ul{
     left: 25%;}}
 
 .slider-horizontal-inner > .timeline-events > .timeline-event > p{
-  margin-top: 0.25em;.
+  margin-top: 0.25em;
 }
 
 .slider-horizontal-inner > .timeline-events > .timeline-event > .img-icon{
@@ -3824,3 +3828,21 @@ a.check-out__my-book-link:hover {
   background-color: #fff;
   color: #00c473;
 }
+
+.woocommerce-ResetPassword{
+  max-width: 395px;
+  margin: 0 auto;}
+@media(min-width:768px){
+  .woocommerce-ResetPassword{
+    max-width: 678px;
+  }}
+@media(min-width:1025px){
+  .woocommerce-ResetPassword{
+    max-width: 905px;
+  }}
+@media(min-width:1200px){
+  .woocommerce-ResetPassword{
+    max-width: 1050px;}}
+@media(min-width:1300px){
+  .woocommerce-ResetPassword{
+    max-width: 1150px;}}

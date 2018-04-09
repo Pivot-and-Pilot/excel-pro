@@ -32,9 +32,7 @@ get_header(); ?>
 
                         <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download All Files"><span>Download All Files</span></button></a>
 
-                        <p>Feeling stuck? Download the answer keys here</p>
-
-                        <a href="<?php the_field('download_all_zip'); ?>" download><button class="button-green button-max-width" data-text="Download Answer Keys"><span>Download Answer Keys</span></button></a>
+                        <p>Feeling stuck? Request the Answer Keys via <a href="email:info@excelpro.com" style="text-decoration: underline; color: #00c473">info@excelpro.com</a> </p>
 
                     </article>
 
