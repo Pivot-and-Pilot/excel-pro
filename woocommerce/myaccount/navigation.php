@@ -56,6 +56,7 @@ $loop->rewind_posts();
       <?php else : ?>
 
       <h3>Welcome!</h3>
+      <p>An email has been sent to your inbox, check spam box if you don't see it.</p>
 
       <?php endif; ?>
       <p>Find your purchased books below.</p>
