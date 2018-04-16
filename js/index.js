@@ -37,16 +37,20 @@ $('.slider').slick({
 });
 
 $(window).on('load', function(){
-  setTimeout(function(){
-    $('#masthead').addClass('js-loaded');
-    $('#loader-table').addClass('state-loaded');
-    $('#loader').addClass('state-loaded');
-
-      setTimeout(function(){
-        $('#loader').remove();
-      }, 5000)
-
-  }, 1500);
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+        $('#loader').css('display', 'none');
+    } else {
+        setTimeout(function(){
+            $('#masthead').addClass('js-loaded');
+            $('#loader-table').addClass('state-loaded');
+            $('#loader').addClass('state-loaded');
+    
+            setTimeout(function(){
+                $('#loader').remove();
+            }, 5000)
+    
+        }, 1500);
+    }
 });
 
 });
