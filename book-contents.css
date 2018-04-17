@@ -1,6 +1,7 @@
 .book-content {
   position: relative;
   transition: 0.5s;
+  margin-bottom: 50px;
 }
 .book-content__logo {
   position: absolute; 
