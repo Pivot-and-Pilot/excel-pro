@@ -291,7 +291,7 @@ input[type="range"]::-ms-track {
   font-size: 1em;
   font-family: Crimson;
   line-height: 1.2;
-  margin-top: 1em;
+  margin-top: 0px;
   margin-left: 0;
   padding-left: 15px;
 }

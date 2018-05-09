@@ -37,7 +37,9 @@ get_header(); ?>
                 <!-- display a sub field value -->
                 <div class="book-content__chapter-contents-item">
                   <h4 class="book-content__chapter-title"><?php the_sub_field('chapter_title'); ?></h4>
-                  <h2 class="learning-objective">Learning objectives:</h2>
+                  <div class="learning-objective">
+                    <?php the_sub_field('chapter_sub_title'); ?>
+                  </div>
                   <div class="book-content__chapter-content"><?php the_sub_field('chapter_content'); ?></div>
                 </div>
             <?php
