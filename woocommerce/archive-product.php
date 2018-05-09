@@ -99,7 +99,7 @@ get_header(); ?>
 
               <figure class="figure-price figure-price-shipping">Coming Soon<span class="currency"></span></figure>
 
-              <img src="<?php echo get_template_directory_uri() . '/img/book-cover.jpg' ?>"/>
+              <img src="<?php echo get_template_directory_uri() . '/img/ExcelPro-book-cover.jpg' ?>"/>
 
             </picture>
 
