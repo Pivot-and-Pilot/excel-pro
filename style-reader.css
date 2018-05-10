@@ -1295,3 +1295,8 @@ input[type="range"]::-ms-track {
 .single-chapters #main {
   background-color: #6545ff;
 }
+
+.special {
+  font-family: "Courier New", Courier, monospace !important;
+  color: #00c473;
+}

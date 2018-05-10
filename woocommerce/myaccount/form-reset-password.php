@@ -27,11 +27,17 @@ wc_print_notices(); ?>
 	<p><?php echo apply_filters( 'woocommerce_reset_password_message', __( 'Enter a new password below.', 'woocommerce' ) ); ?></p>
 
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-		<label for="password_1"><?php _e( 'New password', 'woocommerce' ); ?> <span class="required">New Password</span></label>
+		<label for="password_1" style="text-align: center">
+			<!-- <?php _e( 'New password', 'woocommerce' ); ?> -->
+			<span class="required">New Password</span>
+		</label>
 		<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password_1" id="password_1" />
 	</p>
 	<p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
-		<label for="password_2"><?php _e( 'Re-enter new password', 'woocommerce' ); ?> <span class="required">Re-enter New Password</span></label>
+		<label for="password_2" style="text-align: center">
+			<!-- <?php _e( 'Re-enter new password', 'woocommerce' ); ?> -->
+			<span class="required">Re-enter New Password</span>
+		</label>
 		<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password_2" id="password_2" />
 	</p>
 

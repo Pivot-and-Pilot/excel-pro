@@ -279,7 +279,7 @@ class BookController {
 
         // If user meta is not defined, set last read chapter by default to chapter one.
         if($last_read_chapter === ''){ 
-            $last_read_chapter = 'chapter_one';
+            $last_read_chapter = 'chapter_zero';
             update_user_meta(wp_get_current_user()->ID, 'book_' . $id . '_last_read_chapter', $last_read_chapter, true);
         }
 

@@ -21,6 +21,9 @@
   font-family: "Gimlet Text Bd";
   font-size: 2em;
 }
+.book-content__sub-header {
+  font-family: "Gimlet Text Bd";
+}
 .book-content__chapter-title {
   width: 100%;
   font-family: Montserrat, sans-serif;
@@ -95,6 +98,7 @@
 }
 .book-content__table-of-contents-content > ul li > ul {
   padding: 2px 0;
+  margin-left: 0 !important;
 }
 .book-content__table-of-contents-content > ul li > ul li {
   font-weight: 100;

@@ -25,7 +25,8 @@ get_header(); ?>
             <img src="<?php the_field('logo') ?>" alt="">
           </div>
 
-          <div class="book-content__header">Chapter Contents</div>
+          <div class="book-content__header">Learning objectives by chapter</div>
+          <div class="book-content__sub-header">Scroll down for <i>Table of Contents</i></div>
 
           <div class="book-content__chapter-contents-wrap">
             <?php

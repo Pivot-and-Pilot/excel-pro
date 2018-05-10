@@ -267,7 +267,12 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<td>
 				<select name="gender" id="gender" value="<?php echo esc_attr( get_the_author_meta( 'gender', $user->ID ) ); ?>" class="regular-text">
           <option value="Male" <?php if (get_the_author_meta( 'gender', $user->ID) == 'Male' ) echo 'selected="selected"'; ?>>Male</option>
+
           <option value="Female" <?php if (get_the_author_meta( 'gender', $user->ID) == 'Female' ) echo 'selected="selected"'; ?>>Female</option>
+
+          <option value="Other" <?php if (get_the_author_meta( 'gender', $user->ID) == 'Other' ) echo 'selected="selected"'; ?>>Other</option>
+
+          <option value="Not specified" <?php if (get_the_author_meta( 'gender', $user->ID) == 'Not specified' ) echo 'selected="selected"'; ?>>Not specified</option>
         </select>
 			</td>
 		</tr>
@@ -312,6 +317,8 @@ function wooc_extra_register_fields() {?>
     <select name="gender" id="reg_gender" value="<?php echo ( ! empty( $_POST['gender'] ) ) ? esc_attr( $_POST['gender'] ) : ''; ?>">
       <option value="Male" <?php selected('Male', get_user_meta($user->ID, 'gender', true)); ?>>Male</option>
       <option value="Female" <?php selected('Female', get_user_meta($user->ID, 'gender', true)); ?>>Female</option>
+      <option value="Other" <?php selected('Other', get_user_meta($user->ID, 'gender', true)); ?>>Other</option>
+      <option value="Not specified" <?php selected('Not specified', get_user_meta($user->ID, 'gender', true)); ?>>Not specified</option>
     </select>
   </p>
   <?php
