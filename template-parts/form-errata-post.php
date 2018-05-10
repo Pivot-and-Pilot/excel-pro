@@ -26,7 +26,7 @@ $current_user = wp_get_current_user();
       <input name="EMAIL" type="email" placeholder="email*"/ value="<?php echo $current_user->user_email ?>">
       <input name="PHONE" type="text" placeholder="phone number"/>
     </div>
-  <h2>Where did you find the mistake?</h2>
+  <!-- <h2>Where did you find the mistake?</h2>
     <div class="container-dropdowns">
       <select id="#select_book" name="PRODUCT_ID">
           <option value="">Book</option>
@@ -56,7 +56,7 @@ $current_user = wp_get_current_user();
         <option value="4">Section 4</option>
         <option value="5">Section 5</option>
       </select>
-    </div>
+    </div> -->
     <h2>Tell us more about the mistake:</h2>
     <textarea name="COMMENT" placeholder="Please be as detailed as possible"></textarea>
     <button class="button-orange" data-text="Submit Form"><span>Submit Form</span></button>
