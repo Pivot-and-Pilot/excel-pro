@@ -28,15 +28,17 @@ function create_comment($current_user){
 
     // add '!$fName || !$lName || !is_string($fName) || !is_string($lName) ||' to the if statement to require first name and last name
     if( !$email || !is_string($email)) return false;
-    if($productId === null || $chapter === null || $section === null || $comment === null || $comment === "") return false;
 
-    $productId = intval($productId);
-    $chapter = intval($chapter);
-    $section = intval($section);
+    // add $productId === null || $chapter === null || $section === null || tp if statement to require book and chapter and section
+    if($comment === null || $comment === "") return false;
 
-    if(!wc_get_product($productId)) return false;
-    if(!get_field(AVAILABLE_CHAPTERS[$chapter], $productId)) return false;
-    if(!get_field(AVAILABLE_CHAPTERS[$chapter] . '_section_' . $section, $productId)) return false;
+    // $productId = intval($productId);
+    // $chapter = intval($chapter);
+    // $section = intval($section);
+
+    // if(!wc_get_product($productId)) return false;
+    // if(!get_field(AVAILABLE_CHAPTERS[$chapter], $productId)) return false;
+    // if(!get_field(AVAILABLE_CHAPTERS[$chapter] . '_section_' . $section, $productId)) return false;
 
     $commentdata = array(
         'comment_approved' => 0,
@@ -56,8 +58,8 @@ function create_comment($current_user){
     try {
 
         $comment_id = wp_new_comment( $commentdata, true );
-        add_comment_meta( $comment_id, 'CHAPTER', $chapter );
-        add_comment_meta( $comment_id, 'SECTION', $section );
+        // add_comment_meta( $comment_id, 'CHAPTER', $chapter );
+        // add_comment_meta( $comment_id, 'SECTION', $section );
 
     } catch (Exception $e) {
         

@@ -312,7 +312,7 @@ input[type="range"]::-ms-track {
   font-size: 1em;
   font-family: Crimson;
   line-height: 1.2;
-  margin-top: 0px;
+  margin-top: 1em;
 }
 
 @media (max-width: 767px) {

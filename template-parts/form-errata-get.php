@@ -258,9 +258,9 @@ $current_user = wp_get_current_user();
 
         <h4><?php echo get_the_title($comment->comment_post_ID); ?></h4>
 
-        <p class="p-title"><b><?php echo AVAILABLE_CHAPTERS_NAMES[$chapterIndex]; ?></b> : <?php echo get_field(AVAILABLE_CHAPTERS[$chapterIndex] . '_title', $comment->comment_post_ID); ?></p>
+        <!-- <p class="p-title"><b><?php echo AVAILABLE_CHAPTERS_NAMES[$chapterIndex]; ?></b> : <?php echo get_field(AVAILABLE_CHAPTERS[$chapterIndex] . '_title', $comment->comment_post_ID); ?></p> -->
 
-        <h2><?php echo 'Section ' . $sectionNum . ': ' . get_field(AVAILABLE_CHAPTERS[$chapterIndex] . '_section_' . $sectionNum, $comment->comment_post_ID); ?></h2>
+        <!-- <h2><?php echo 'Section ' . $sectionNum . ': ' . get_field(AVAILABLE_CHAPTERS[$chapterIndex] . '_section_' . $sectionNum, $comment->comment_post_ID); ?></h2> -->
 
         <p class="content"><?php echo $comment->comment_content; ?></p>
 
