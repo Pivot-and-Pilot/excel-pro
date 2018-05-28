@@ -581,3 +581,5 @@ require get_template_directory() . '/inc/class-book-controller.php';
 //   }
 // }
 // add_action('init', 'admin_bar' );
+
+add_theme_support( 'woocommerce' );
