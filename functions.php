@@ -506,11 +506,11 @@ function excelpro_scripts() {
 
   }
 
-  if(is_archive('product')){
+  // if(is_archive('product')){
     
     wp_enqueue_script('excelpro-shop', get_template_directory_uri() . '/js/shop.js', array(), null, true);
 
-  }
+  // }
 
   if(is_page('testimonials')){
 
