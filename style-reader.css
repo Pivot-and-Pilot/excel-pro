@@ -136,7 +136,7 @@ input[type="range"]::-ms-track {
 .article-chapter > h5 {
   color: black;
   font-family: Montserrat, sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
   line-height: 1.4;
   margin: 1.5em 0 0 0;
@@ -358,7 +358,7 @@ input[type="range"]::-ms-track {
 }
 
 .article-chapter td {
-  padding-bottom: 1em;
+  padding-bottom: 0.1em;
   vertical-align: top;
 }
 @media (max-width: 1024px) {
