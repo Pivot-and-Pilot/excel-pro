@@ -118,7 +118,7 @@ $loop->rewind_posts();
 
             <?php if ( in_array( 'teacher', $current_user->roles ) || in_array('administrator', $current_user->roles)): ?> 
 
-              <a class="button-teacher" href=""><button class="button-transparent" data-text="Download Teacher Bundle"><span>Download Teacher Bundle</span></button></a>
+              <a class="button-teacher" href="<?php the_field("teacher_bundle")?>"><button class="button-transparent" data-text="Download Teacher Bundle"><span>Download Teacher Bundle</span></button></a>
 
             <?php endif?>
 
