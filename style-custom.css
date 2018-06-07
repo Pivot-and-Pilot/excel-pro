@@ -837,8 +837,8 @@ ul {
 @media (min-width: 1200px) {
   .article-product > .reader-links > a {
     /* uncomment when add Mac OS book */
-    /* width: calc(50% - 7.5px); */
-    width: 100%;
+    width: calc(50% - 7.5px);
+    /* width: 100%; */
   }
 }
 

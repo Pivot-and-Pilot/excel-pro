@@ -114,7 +114,7 @@ $loop->rewind_posts();
             <a href="<?php echo get_permalink() . '#' . $book->last_read_chapter ?>"><button class="button-transparent" data-text="Read For Windows"><span>Read For Windows</span></button></a>
 
             <!-- not showing the read for mac button until the book is avaiable -->
-            <!-- <a href="<?php echo get_permalink(get_field('alternate_version')) . '#' . $book_alternate->last_read_chapter ?>"><button class="button-transparent" data-text="Read For Mac"><span>Read For Mac</span></button></a> -->
+            <a href="<?php echo get_permalink(get_field('alternate_version')) . '#' . $book_alternate->last_read_chapter ?>"><button class="button-transparent" data-text="Read For Mac"><span>Read For Mac</span></button></a>
 
             <?php if ( in_array( 'teacher', $current_user->roles ) || in_array('administrator', $current_user->roles)): ?> 
 
