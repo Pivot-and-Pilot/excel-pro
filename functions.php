@@ -253,6 +253,7 @@ function my_show_extra_profile_fields( $user ) { ?>
           <option value="56-65" <?php if (get_the_author_meta( 'age', $user->ID) == '56-65' ) echo 'selected="selected"'; ?>>56-65</option>
           <option value="66-75" <?php if (get_the_author_meta( 'age', $user->ID) == '66-75' ) echo 'selected="selected"'; ?>>66-75</option>
           <option value="75 years or older" <?php if (get_the_author_meta( 'age', $user->ID) == '75 years or older' ) echo 'selected="selected"'; ?>>75 years or older</option>
+          <option value="Not Specified" <?php if (get_the_author_meta( 'age', $user->ID) == 'Not Specified' ) echo 'selected="selected"'; ?>>Not Specified</option>
         </select>
 			</td>
 		</tr>
@@ -304,6 +305,7 @@ function wooc_extra_register_fields() {?>
       <option value="56-65">56-65</option>
       <option value="66-75">66-75</option>
       <option value="75 years or older">75 years or older</option>
+      <option value="Not Specified">Not Specified</option>
     </select>
   </p>
   <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
